@@ -1,0 +1,27 @@
+-src|
+	|-home		|
+	|			|-App.css
+	|			|-App.tsx 					(Main component | switching between Listing and Detail | functional Component)
+	|			|-App.test.tsx
+	|
+	|-Dashboard	|-Dashboard.css
+	|			|-Dashboard.tsx 			(Show all Houses | Call Api | Switch to detail view | pageination | class component)
+	|			|-Dashboard.test.tsx	
+	|
+	|-Detail	|-Detail.css
+	|			|-Detail.tsx 				(Show House details | Call Api | return to overview)
+	|			|-Detail.test.tsx
+	|
+	|-utils		|
+	|			|-Pageination.css
+	|			|-Pageination.tsx 			(pageination utility | reusable)
+	|			|-Pageination.test.tsx
+	|
+	|-service	|-Service.house.api.ts
+	|			|-Service.test.tsx
+	|			|-types	|
+	|			|		|-House.type.ts
+	|			|		|-Service.type.ts
+	|
+	|index.tsx	(default)
+	|index.css 	(default)

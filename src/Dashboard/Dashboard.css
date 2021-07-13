@@ -1,0 +1,71 @@
+.HouseDashboard{
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+	justify-content: center;
+	width: 100%;
+	min-height: 75vh;
+	padding: 0.5rem;
+	overflow-y: auto;
+}
+
+.HouseDashboard .house{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	aspect-ratio: 1/1;
+	padding: 1.5rem;
+	overflow: hidden;
+	cursor: pointer;
+	/*background-color: #777777;*/
+	border-radius: 1rem;
+}
+
+.HouseDashboard .house span{
+	text-align: center;
+	height: 2rem;
+	position: absolute;
+	inset: 0;
+	/*background-color: rgba(50,50,50,0.95);*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7b7b7d;
+	font-weight: bold;
+	font-size: 1.5rem;
+	transform: translateY(110%);
+	transition: transform 0.25s ease-in-out;
+	box-sizing: border-box;
+	padding: 1.5rem;
+	font-size: 3rem;
+}
+.HouseDashboard .house:hover span{
+	transform: translateY(0);
+}
+.HouseDashboard .house .crest{
+	height: 100%;
+	aspect-ratio:  1/1;
+	transform: translateY(0);
+	transition: transform 0.25s ease-in-out;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #2c302f;
+	background-image: url("../assets/icons/None.svg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.HouseDashboard .house .crest.Dorne{
+	background-image: url("../assets/icons/None_(Dorne).svg");
+}
+.HouseDashboard .house:hover .crest{
+	transform: translateY(-110%);
+}

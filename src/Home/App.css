@@ -1,0 +1,78 @@
+header{
+  height: 5rem;
+  box-shadow: 0 3px 5px rgba(233, 214, 236, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: relative;
+  background-color: #2C302F;
+}
+
+header .logo{
+  max-height: 100%;
+  position: relative;
+  padding: 0.5rem;
+}
+.App{
+  height: 100%;
+}
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+footer>span+span{
+  margin-left: 1rem;
+}
+.loading{
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  justify-content: center;
+  width: 100%;
+  min-height: 75vh;
+  padding: 0.5rem;
+  overflow-y: auto;
+  filter: blur(0.5rem);
+}
+.loading .mock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 1/1;
+  padding: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.loading .mock .crest{
+  height: 100%;
+  aspect-ratio:  1/1;
+}
+
+.loadingbar:after{
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    transition: width ease-in-out .2s;
+    background: none repeat scroll 0 0 #5AB1BB;
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 0;
+    animation-name: loadingbar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes loadingbar {
+  from {width: 0;}
+  to {width: 90%;}
+}

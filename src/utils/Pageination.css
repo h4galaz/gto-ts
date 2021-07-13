@@ -1,0 +1,21 @@
+.pageination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.pageination>span{
+	color: #FAE8EB;
+	padding: 0.5rem;
+	background-color: #2C302F;
+	aspect-ratio: 1/1;
+	width: 2rem;
+	text-align: center;
+}
+.pageination>span.pageswitch{
+	cursor: pointer;
+	user-select: none;
+}
+.pageination>span.pageswitch:hover{
+	background-color: #5AB1BB;
+}
